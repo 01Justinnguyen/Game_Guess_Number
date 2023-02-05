@@ -1,12 +1,21 @@
 'use strict';
 
 const button = document.querySelector('.btn.check');
+const buttonAgain = document.querySelector('.btn.again');
 
 const randomNumber = Math.floor(Math.random() * 100 + 1);
 
 console.log(randomNumber);
 let yourTurn = document.querySelector('.label-turn span');
 let turn = 7;
+
+buttonAgain.addEventListener('click', () => {
+  document.querySelector('.message').textContent = 'Start guessing...';
+  document.querySelector('.number').textContent = `?`;
+  document.querySelector('.guess').value = '';
+  yourTurn.innerHTML = '7';
+  button.style.display = 'block';
+});
 
 button.addEventListener('click', () => {
   const result = document.querySelector('.guess').value;
