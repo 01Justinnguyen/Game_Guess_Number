@@ -1,0 +1,36 @@
+/* mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+  html {
+    font-size: 40%;
+    box-sizing: border-box;
+  }
+
+  header {
+    border-bottom: 3px solid #eee;
+  }
+
+  header h1 {
+    margin: 10px 10px;
+    line-height: 1.4;
+  }
+
+  .guess {
+    font-size: 4.5rem;
+    padding: 2.5rem;
+    width: 20rem;
+  }
+
+  .message {
+  }
+
+  .number {
+    font-size: 5rem;
+    width: 15rem;
+    padding: 2rem 0rem;
+    bottom: -6px;
+  }
+
+  .label-turn {
+    line-height: 1.6;
+  }
+}
